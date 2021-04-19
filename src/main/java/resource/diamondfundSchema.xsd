@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://www.diamondss.com/"
+        xmlns:xs="https://www.diamondss.com/"
+        elementFormDefault="qualified">
+
+    <element name="gem">
+        <complexType>
+            <sequence>
+                <element name="gemstone" type="xs:gemstone" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="gemstone">
+        <sequence>
+            <element name="name">
+                <simpleType>
+                    <restriction base="string">
+                        <pattern value="[a-zA-Z]+"/>
+                    </restriction>
+                </simpleType>
+            </element>
+
+            <element name="preciousness">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="Precious"/>
+                        <enumeration value="Semi-precious"/>
+                    </restriction>
+                </simpleType>
+            </element>
+
+            <element name="origin">
+                <simpleType>
+                    <restriction base="string">
+                        <pattern value="[a-zA-Z]+\s?[a-zA-Z]*"/>
+                    </restriction>
+                </simpleType>
+            </element>
+
+            <element name="VisualParameters" type="xs:VisualParameters"/>
+
+            <element name="value">
+                <simpleType>
+                    <restriction base="string">
+                        <pattern value="[0-9]+"/>
+                    </restriction>
+                </simpleType>
+            </element>
+
+        </sequence>
+    </complexType>
+
+    <complexType name="VisualParameters">
+        <sequence>
+            <element name="color" type="string"/>
+            <element name="transparency" type="integer">
+                <simpleType>
+                    <restriction base="integer">
+                        <minInclusive value="0"/>
+                        <maxInclusive value="100"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cutting">
+                <simpleType>
+                    <restriction base="integer">
+                        <pattern value="[0-9][0-9]"/>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+
+</schema>

@@ -1,0 +1,8 @@
+com\epam\diamondfund\JSONParser\Gem.class
+com\epam\diamondfund\Gemstone.class
+com\epam\diamondfund\SAXParser\Main.class
+com\epam\diamondfund\StAXParser\Main.class
+com\epam\diamondfund\DOMParser\Main.class
+com\epam\diamondfund\JSONParser\Main.class
+com\epam\diamondfund\SAXParser\XMLHandler.class
+com\epam\diamondfund\VisualParameters.class
