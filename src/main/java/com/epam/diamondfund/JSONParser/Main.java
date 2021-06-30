@@ -13,10 +13,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**Написать приложение, которое превращает XML файл из задания по XML в JSON файл и сохраняет его в системе
+Написать парсер, который парсит полученный в п. 1 JSON и создает из него коллекцию объектов*/
+
 public class Main {
     static Logger logger = LogManager.getLogger(Main.class);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         BasicConfigurator.configure();
         XMLtoJSONParser xMLtoJSONParser = new XMLtoJSONParser();
         xMLtoJSONParser.parseXMLtoJSON();

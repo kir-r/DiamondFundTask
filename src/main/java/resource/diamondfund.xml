@@ -1,38 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/xsl" href="transformXML.xsl"?>
-<gem xmlns="https://www.diamondss.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="https://www.diamondss.com/diamondfundSchema.xsd">
-    <gemstone>
-        <name>Diamond</name>
-        <preciousness>Precious</preciousness>
-        <origin>South Africa</origin>
-        <VisualParameters>
-            <color>white</color>
-            <transparency>100</transparency>
-            <cutting>55</cutting>
-        </VisualParameters>
-        <value>112</value>
-    </gemstone>
-    <gemstone>
-        <name>Sapphire</name>
-        <preciousness>Precious</preciousness>
-        <origin>South America</origin>
-        <VisualParameters>
-            <color>Green</color>
-            <transparency>70</transparency>
-            <cutting>54</cutting>
-        </VisualParameters>
-        <value>423</value>
-    </gemstone>
-    <gemstone>
-        <name>Ruby</name>
-        <preciousness>Precious</preciousness>
-        <origin>Persia</origin>
-        <VisualParameters>
-            <color>red</color>
-            <transparency>50</transparency>
-            <cutting>44</cutting>
-        </VisualParameters>
-        <value>76</value>
-    </gemstone>
+<?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/xsl" href="diamondfund.xsl"?>
+<gem xmlns="https://diamondss.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="https://diamondss.com/diamondfundSchema.xsd">
+<gemstone>
+    <name>Diamond</name>
+    <preciousness>Precious</preciousness>
+    <origin>South Africa</origin>
+    <VisualParameters>
+        <color>white</color>
+        <transparency>100</transparency>
+        <cutting>55</cutting>
+    </VisualParameters>
+    <value>112</value>
+</gemstone>
+<gemstone>
+    <name>Sapphire</name>
+    <preciousness>Precious</preciousness>
+    <origin>South America</origin>
+    <VisualParameters>
+        <color>Green</color>
+        <transparency>70</transparency>
+        <cutting>54</cutting>
+    </VisualParameters>
+    <value>423</value>
+</gemstone>
+<gemstone>
+    <name>Ruby</name>
+    <preciousness>Precious</preciousness>
+    <origin>Persia</origin>
+    <VisualParameters>
+        <color>red</color>
+        <transparency>50</transparency>
+        <cutting>44</cutting>
+    </VisualParameters>
+    <value>76</value>
+</gemstone>
 </gem>
+
 
