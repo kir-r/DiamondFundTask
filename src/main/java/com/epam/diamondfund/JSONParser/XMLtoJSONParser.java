@@ -22,20 +22,19 @@ public class XMLtoJSONParser {
             JAXBContext context = JAXBContext.newInstance(Gem.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             gem = (Gem) unmarshaller.unmarshal(reader);
-            System.out.println("parseXMLtoJSON gem " + gem);
+            Main.logger.info("Parse XML to JSON gem " + gem);
             createJSONFromObject();
         } catch (JAXBException | IOException e) {
-            e.printStackTrace();
-//            Main.logger.error(e.getMessage());
+            Main.logger.error(e.getMessage());
         }
     }
+
     private void createJSONFromObject() {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         try (FileWriter writer = new FileWriter("src\\main\\java\\resource\\diamondfundJSON.json")) {
             writer.write(gson.toJson(gem));
         } catch (IOException e) {
-            e.printStackTrace();
-//            Main.logger.error(e.getMessage());
+            Main.logger.error(e.getMessage());
         }
     }
 }

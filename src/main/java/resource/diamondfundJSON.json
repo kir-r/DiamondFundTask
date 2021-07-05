@@ -1,36 +1,19 @@
 {
-  "gem": {
-    "xmlns": "https://www.diamondss.com/",
-    "xsi:schemaLocation": "https://www.diamondss.com/diamondfundSchema.xsd",
-    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-    "gemstone": [
-      {
-        "preciousness": "Precious",
-        "origin": "South Africa",
-        "name": "Diamond",
-        "VisualParameters": {
-          "color": "white",
-          "transparency": 100,
-          "cutting": 55
-        },
-        "value": 112
-      },
-      {
-        "preciousness": "Precious",
-        "origin": "South America",
-        "name": "Sapphire",
-        "VisualParameters": {
-          "color": "Green",
-          "transparency": 70,
-          "cutting": 54
-        },
-        "value": 423
-      },
-      {
-        "preciousness": "Precious",
-        "origin": "Persia",
-        "name": "Ruby",
-        "VisualParameters": {
-          "color": "red",
-          "transparency": 50,
-          "cutting": 44},"value":76}]}}
+  "gemstone": [
+    {
+      "preciousness": "Precious",
+      "origin": "South Africa",
+      "value": "112"
+    },
+    {
+      "preciousness": "Precious",
+      "origin": "South America",
+      "value": "423"
+    },
+    {
+      "preciousness": "Precious",
+      "origin": "Persia",
+      "value": "76"
+    }
+  ]
+}

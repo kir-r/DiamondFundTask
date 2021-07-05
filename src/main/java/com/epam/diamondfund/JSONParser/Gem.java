@@ -4,22 +4,17 @@ import com.epam.diamondfund.Gemstone;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
+@XmlType(name = "gem", namespace = "https://diamondss.com/", propOrder = {
         "gemstone"
 })
-@XmlRootElement(name = "gem")
+
+@XmlRootElement(name = "gem", namespace = "https://diamondss.com/")
 public class Gem {
-
-    @XmlElement(required = true)
+    @XmlElement(required = true, namespace = "https://diamondss.com/")
     protected List<Gemstone> gemstone;
-
 
     public List<Gemstone> getGemstone() {
         if (gemstone == null) {
@@ -31,7 +26,7 @@ public class Gem {
     @Override
     public String toString() {
         return "Gem{" +
-                "gemstone=" + gemstone +
+                "gemstone=" + getGemstone() +
                 '}';
     }
 }
