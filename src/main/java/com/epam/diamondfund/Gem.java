@@ -1,4 +1,4 @@
-package com.epam.diamondfund.JSONParser;
+package com.epam.diamondfund;
 
 import com.epam.diamondfund.Gemstone;
 

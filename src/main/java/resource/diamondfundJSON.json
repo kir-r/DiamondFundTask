@@ -1,16 +1,19 @@
 {
   "gemstone": [
     {
+      "name": "Diamond",
       "preciousness": "Precious",
       "origin": "South Africa",
       "value": "112"
     },
     {
+      "name": "Sapphire",
       "preciousness": "Precious",
       "origin": "South America",
       "value": "423"
     },
     {
+      "name": "Ruby",
       "preciousness": "Precious",
       "origin": "Persia",
       "value": "76"

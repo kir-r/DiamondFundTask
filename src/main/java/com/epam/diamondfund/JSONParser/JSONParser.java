@@ -1,5 +1,6 @@
 package com.epam.diamondfund.JSONParser;
 
+import com.epam.diamondfund.Gem;
 import com.google.gson.Gson;
 
 import java.io.*;

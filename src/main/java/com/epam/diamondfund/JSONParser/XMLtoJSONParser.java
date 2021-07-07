@@ -1,13 +1,8 @@
 package com.epam.diamondfund.JSONParser;
-import com.epam.diamondfund.JSONParser.Gem;
+import com.epam.diamondfund.Gem;
 
-import com.epam.diamondfund.Gemstone;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import org.w3c.dom.DocumentType;
-
-import org.json.JSONObject;
-import org.json.XML;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

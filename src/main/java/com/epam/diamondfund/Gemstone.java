@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 
 public class Gemstone {
-    @XmlAttribute(name = "name", required = true)
+    @XmlElement(name = "name", required = true)
     private String name;
     @XmlElement(required = true)
     private String preciousness;
