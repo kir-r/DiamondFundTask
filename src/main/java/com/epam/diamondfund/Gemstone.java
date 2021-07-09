@@ -22,7 +22,7 @@ public class Gemstone {
     private String preciousness;
     @XmlElement(required = true)
     private String origin;
-    @XmlElement(name = "visualParameters", required = true)
+    @XmlElement(name = "VisualParameters", required = true)
     private VisualParameters visualParameters;
     private String value;
 

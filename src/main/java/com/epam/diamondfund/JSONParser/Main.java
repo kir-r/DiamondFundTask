@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 Написать парсер, который парсит полученный в п. 1 JSON и создает из него коллекцию объектов*/
 
 public class Main {
-    static Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
         BasicConfigurator.configure();

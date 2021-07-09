@@ -4,18 +4,33 @@
       "name": "Diamond",
       "preciousness": "Precious",
       "origin": "South Africa",
+      "visualParameters": {
+        "color": "white",
+        "transparency": "100",
+        "cutting": "55"
+      },
       "value": "112"
     },
     {
       "name": "Sapphire",
       "preciousness": "Precious",
       "origin": "South America",
+      "visualParameters": {
+        "color": "Green",
+        "transparency": "70",
+        "cutting": "54"
+      },
       "value": "423"
     },
     {
       "name": "Ruby",
       "preciousness": "Precious",
       "origin": "Persia",
+      "visualParameters": {
+        "color": "red",
+        "transparency": "50",
+        "cutting": "44"
+      },
       "value": "76"
     }
   ]

@@ -3,6 +3,8 @@ import com.epam.diamondfund.Gem;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -11,16 +13,16 @@ import java.io.*;
 
 public class XMLtoJSONParser {
     Gem gem;
+    private Logger logger = LogManager.getLogger(XMLtoJSONParser.class);
 
     public void parseXMLtoJSON() {
         try (FileReader reader = new FileReader("src\\main\\java\\resource\\diamondfund.xml")) {
             JAXBContext context = JAXBContext.newInstance(Gem.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             gem = (Gem) unmarshaller.unmarshal(reader);
-            Main.logger.info("Parse XML to JSON gem " + gem);
             createJSONFromObject();
         } catch (JAXBException | IOException e) {
-            Main.logger.error(e.getMessage());
+            logger.error(e.getMessage());
         }
     }
 
@@ -29,7 +31,7 @@ public class XMLtoJSONParser {
         try (FileWriter writer = new FileWriter("src\\main\\java\\resource\\diamondfundJSON.json")) {
             writer.write(gson.toJson(gem));
         } catch (IOException e) {
-            Main.logger.error(e.getMessage());
+            logger.error(e.getMessage());
         }
     }
 }
